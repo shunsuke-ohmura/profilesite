@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+    <!-- 利用できる中で互換性のモードを設定できる -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>profile!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--ページの概要、説明文-->
+  <meta name="description" content="これは私のプロフィール です。">
+  <!-- SEOのため現在使わないのが主流-->
+  <meta name="keywords" content="">
+  <!-- URL横アイコン -->
+  <link rel= "icon" href= "ico/favicon.ico">
+
+  <!-- Webフォント-->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- その他ライブラリ-->
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUqGG_vOMrnTXSJ6rNAuJ0nIwVeVmqonU&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <div class="top">
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+
+        <!-- ホームリンク -->
+        <a href="#" class="navbar-brand" aria-label="ホーム">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </a>
+
+        <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- メニュー -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">Top</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">自己紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill-introduction">スキル紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#web-app">webアプリケーション</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#front-end">フロントエンド</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">ポートフォリオ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+    
+    <!--top画 -->
+    <div class="top__bg">
+      <div class="top__photos">
+        <img class="tokyotower" src="img/IMG_3895.jpeg" width="100%" height="100%" alt="tokyotower">
+        <img class="jellyfish" src="img/IMG_3890.jpeg" width="100%" height="100%" alt="クラゲ">
+      </div>
+    </div>
+    
+    <div class="top__text-box animated bounce">
+      <h1 class="top__title">profile</h1>
+      <div class="top__catchphrase">My skill...</div>
+    </div>
+  </div>
+  <!-- 自己紹介 -->
+  <section id="profile" class="profile">
+    <div class="self__title animated">
+      自己紹介
+    </div>
+    <div class="container animated">
+      <div class="row">
+        
+      <div class="self-photos col-md-4 animated">
+        <img class="img-fluid rounded" src="img/IMG_3333.jpeg" width="100%" height="100%" alt="クラゲ">
+        <figcaption>大村　俊介</figcaption>
+      </div>
+          
+      <!-- 自分について -->
+      <div class="tabs__content col-md-8">
+        <div class="tabs__content1">
+          <div class="name">
+          <h4>名前:　大村俊介</h4>
+          </div>
+          <div class="birthday">
+            <h4>生年月日:　1990/08/24</h4>
+          </div>
+          <div class="college">
+            <h4>最終学歴:　神奈川大学</h4>
+          </div>
+          <div class="job">
+            <h4>前 職:　ブリヂストンタイヤサービス</h4>
+          </div>
+          <div class="fobby">
+            <h4>趣 味:　読書、海外ドラマ、アニメ</h4>
+          </div>
+        </div>
+        <div class="tabs__content2">
+          <div class="greeting text-center">
+            <h2><挨拶></h2>
+          </div>
+          <div class="greeting--content">
+            <h4>
+            私は、以前から興味があったWeb業界に転職をしようと思い、
+            テックアカデミーにて、
+            Webアプリケーションコース、フロントエンジニアコース
+            を学び、今現在転職活動しています。
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>     
+  </section>
+  
+  <!-- スキル紹介 -->
+    <section id="skill-introduction" class="skill-introduction">
+    <div class="skill__title animated">
+      スキル紹介
+    </div>
+    <div class="history text-right animated">
+      <button type="button" id="btn1">今日で学習期間は何日ですか？</button>
+      <br>
+      <label>学習期間は<input type="text" id="tBox" class="font-main"></label>
+    </div>
+    <div class="container animated">
+      <div class="row">
+          
+      <!-- スキルについて -->
+      <div class="skill__content1 card col-md-6">
+        <dev class="skill--study1">
+          <h3>学習方法①　progate</h3>
+          <P>・HTML/CSS</P>
+          <P>・Ruby/RubyRails</P>
+          <P>・javascript/JQuery</P>
+        </dev>
+      </div>
+      <div class="skill__content2 card col-md-6"> 
+        <dev class="skill--study2">
+          <h3>学習方法②　TechAcademy</h3>
+          <P>・Webアプリケーションコース</P>
+          <P>・フロントエンドコース</P>
+          <P>・Photoshop</P
+        </div>
+      </div>
+        <div class="skill__content3 offset-md-3 col-md-6">
+          <div class="web--front text-center">※下記、WEBアプリケーション、フロントエンドの評価基準</div>
+            <div class="web--front--contents offset-md-2 col-md-10">
+              <p>★☆☆　課題を達成できなかった。</p>
+              <p>★★☆　課題を途中まで達成できた。</p>
+              <p>★★★　課題を達成できた。</p>
+            </div>
+        </div>
+      </div>
+    </div>     
+  </section>
+  
+  
+  <!-- web-app -->
+  <section id="web-app" class="web-app">
+    <div class="web-app__title text-center animated">
+      Webアプリケーションコース
+    </div>
+    <div class="container animated">
+      <div class="row">
+        
+        <table class="web-app__table col-md-12">
+          <tr>
+            <th class="table__title">スキル</th>
+            <th class="table__title">レベル</th>
+          </tr>
+          <tr>
+            <td class="skill">HTML/CSS</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Bootstrap</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">ターミナル</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Ruby/RubyRails</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">MYSQL</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Git/GitHub</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">メッセージボード</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Heroku</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Twitterクローン</td>
+            <td class="star">★★☆</td>
+          </tr>
+          <tr>
+            <td class="skill">オリジナルサイト制作</td>
+            <td class="star">★☆☆</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+    <!-- front-end -->
+  <section id="front-end" class="front-end">
+    <div class="front-end__title text-center animated">
+      フロントエンドコース
+    </div>
+    <div class="container animated">
+      <div class="row">
+        
+        <table class="front-end__table col-md-12">
+          <tr>
+            <th class="table__title">スキル</th>
+            <th class="table__title">レベル</th>
+          </tr>
+          <tr>
+            <td class="skill">HTML/CSS</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">javascript</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">JQuery</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Bootstrap</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">web API</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">Baas</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">vue.js</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">外部ライブラリ</td>
+            <td class="star">★★★</td>
+          </tr>
+          <tr>
+            <td class="skill">オリジナルサイト制作</td>
+            <td class="star">★★★</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio__title text-center animated">
+      ポートフォリオ
+    </div>
+    <div class="container animated">
+      <div class="row">
+
+        <!-- その1 -->
+        <div class="portfolio--content1 col-md-3">
+          <div class="tasklist">
+            <a href="https://kadai-tasklist-1179.herokuapp.com/"><img class="t--photo" src="img2/IMG_4054.png" width="150px" height="150px" alt="タスクリスト"></a>
+            <div class="">タスクリスト</div>
+          </div>
+        </div>
+        <!--その１終わり -->
+
+        <!-- その2 -->
+        <div class="portfolio--content2 col-md-3">
+          <div class="message--board">
+            <a href="https://Message-board-1179.herokuapp.com/"><img class="m--photo" src="img2/IMG_4053.png" width="150px" height="150px" alt="メッセージボード"></a>
+            <p>メッセージボード</p>
+          </div>
+        </div>
+        <!--その２終わり -->
+                
+        <!-- その3 -->        
+        <div class="portfolio--content3 col-md-3">
+          <div class="realtimechat">
+            <a href="http://plumsnake70.sakura.ne.jp/realtime-chat-with-fav/index.html"><img class="r--photo" src="img2/IMG_4055.png" width="150px" height="150px" alt="リアルタイムチャット"></a>
+            <p>リアルタイムチャット</p>
+          </div>
+        </div>
+        <!--その3終わり -->
+        
+                <!-- その4 -->        
+        <div class="portfolio--content4 col-md-3">
+          <div class="bookshelf">
+            <a href="http://plumsnake70.sakura.ne.jp/bookshelf-with-deletion/index.html"><img class="b--photo" src="img2/IMG_4058.png" width="150px" height="150px" alt="本棚"></a>
+            <p>本棚</p>
+          </div>
+        </div>
+        <!--その4終わり -->
+      </div>
+    </div>
+    <div class="warning text-center animated">
+      <p>画像をクリックするとリンク先に飛びます。</p>
+    </div>
+  </section>
+  
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <div class="contact__title text-center animated">
+      お問い合わせ
+    </div>
+
+    <div class="container animated">
+      <div class="row">
+        <!-- その1 -->
+        <div class="contact--contents col-md-6">
+        <div class="contact__phrase text-center">
+          <連絡先>
+        </div>
+          <div class="phone">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            : 080-xxxx-xxxx
+          </div>
+          <div class="mail">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            : xxxxxxx@yahoo.co.jp
+          </div>
+          <div class="address">
+            <i class="fas fa-map" aria-hidden="true"></i>
+            : 〒１０５ー００１１
+            <p>東京都港区芝公園４丁目２−８</p>
+          </div>
+        </div>         
+        <!--その１終わり -->
+
+        <!-- その2 -->
+        <div class="contact--contents2 col-md-6 animated">
+          <div class="map-coment">アクセス</div>
+          <div id="map"></div>
+        </div>
+        <!--その２終わり -->
+    
+  </section>
+  <!-- フッター -->
+  <footer>
+    <div class="to-top">▲</div>
+    <a href="https://twitter.com/intent/tweet?screen_name=大村俊介&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @大村俊介</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &copy; 2020 o.s Profile
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+<!-- 水玉 -->
+<canvas class="background"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+  <!-- まずjQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Popper.js, 次に Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- その他ライブラリ -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</body>
+
+</html>

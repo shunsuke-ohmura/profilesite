@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+
+body {
+  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* あわ */
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/*
+@-webkit-keyframes colour{
+    0%{
+        background:#eff7ff;
+    }
+
+    40%{
+        background:#efffff;
+    }
+
+    80%{
+        background:#effff7;
+    }
+
+    100%{
+        background:#efffef;
+    }
+}
+*/
+
+
+/* top */
+
+.top {
+  /* 子要素でposition:absoluteを使うため必要 */
+  position: relative;
+}
+
+.top,
+.top__bg {
+  /* 画面いっぱいに広げる */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top__title {
+  font-family: 'Merienda', cursive;
+  margin-bottom: 10px;
+  font-size: 5rem;
+  line-height: 77px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.top__catchphrase {
+  font-family: 'Merienda', cursive;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.top__bg {
+  /* .topと同じ左上位置に置く */
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* 背景画像を画面いっぱいに置く */
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.top__photos {
+
+  /* 写真を画面いっぱいに表示 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
+  vertical-align: bottom;
+}
+
+
+.top__text-box {
+  /* 上下中央に置く */
+  position: relative;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/*  profile */
+.profile {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.self-photos {
+  text-align: center;
+  font-weight: bold;
+}
+
+.web--front {
+  margin-bottom: 4px;
+}
+
+.skill__title,
+.self__title {
+  text-align: center;
+  
+}
+
+.tabs__content1 {
+  margin-top: 20px;
+}
+.tabs__content2 {
+  margin-top: 70px;
+}
+
+
+.history {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.skill__content1,
+.skill__content2 {
+  margin-top: 30px;
+  color: black;
+}
+
+.skill__content3 {
+  font-style: italic;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+/*  webapp */
+.web-app {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*  フロントエンド */
+.front-end {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*  タイトル */
+.self__title,
+.skill__title,
+.web-app__title,
+.front-end__title,
+.portfolio__title,
+.contact__title {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/*  テーブル */
+.table__title {
+  font-size: 30px;
+}
+
+.skill {
+  font-size: 30px;
+}
+
+/* 星 */
+.star {
+  line-height: 1;
+  color: gold;
+  font-size: 30px;
+}
+
+.star input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.star label {
+  display: inline-block;
+}
+
+.star input:focus + label {
+  outline: 1px solid currentColor;
+}
+
+.star input:checked + label ~ label {
+  color: grey;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map.  Googleマップ*/
+#map {
+  height: 400px;
+  border: 3px solid #eae8e1;
+  
+}
+
+/* Optional: Makes the sample page fill the window. googleマップ*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.speech--bubble {
+  color: black;
+}
+
+.portfolio {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio--content1,
+.portfolio--content2,
+.portfolio--content3,
+.portfolio--content4 {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*  コンタクト */
+.contact__phrase {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact--contents {
+  font-size: 1.5rem;
+  margin-top: 80px;
+}
+
+.contact--contents2 {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+/*-- フッター  --*/
+footer {
+  padding: 30px;
+  text-align: center;
+}
+
+
+/*-- PC版表示CSS  --*/
+.tokyotower{
+  display:block;
+}
+.jellyfish{
+  display:none;
+}
+
+
+/*-- スマホ版表示CSS  --*/
+@media screen and (max-width: 768px){
+  .tokyotower{
+    display:none;
+  }
+  .jellyfish{
+    display:block;
+  }
+}
+
+
+.card {
+  position: relative;
+  top: -16px;
+  transform: scale(.9);
+  box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+  border-top: solid 6px #333;
+}
+
+/*  top戻り */
+.to-top{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  right: 0;
+  bottom: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+
+.font-main {
+  padding: 2px;
+}
+
+#btn1 {
+  margin-bottom: 4px;
+  color: #ffffff;
+  background: #7f7fff;
+}
+
+#tBox {
+  width: 90px;
+  height: 30px;
+}
